@@ -1,51 +1,68 @@
-body {
-  font-family: "Vazir", sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+* {
   margin: 0;
-  padding: 20px;
-  line-height: 1.6;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 20px 0;
-  border: 3px solid #eee;
-}
-
-h1, h2 {
-  color: #2c3e50;
-}
-
-.skills {
+body {
+  background: #f0f4f8;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 20px 0;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Vazir", sans-serif;
+  padding: 20px;
 }
 
-.skill {
-  background: #e0e0e0;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 14px;
+.card {
+  background: white;
+  width: 100%;
+  max-width: 350px;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-a {
-  color: #3498db;
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e2e8f0;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 22px;
+  color: #1a202c;
+  margin-bottom: 8px;
+}
+
+.card-desc {
+  color: #4a5568;
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.card-btn {
+  display: inline-block;
+  background: #3182ce;
+  color: white;
   text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.2s;
 }
 
-a:hover {
-  text-decoration: underline;
+.card-btn:hover {
+  background: #2c5aa0;
 }
